@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares</title>
+</head>
+
+<body>
+    <button type="button" onclick="contar()">Contar - While</button>
+    <button type="button" onclick="contar1()">Contar - For</button>
+    <button type="button" onclick="contar2()">Contar - do while</button>
+
+
+    <script>
+        function contar() {
+            var numero = 0;
+            while (numero <= 10) {
+                document.writeln("Número = " + numero + "<br/>");
+                numero = numero + 1;
+            }
+        }
+
+        function contar1() {
+            for (var i = 0; i <= 10; i++) {
+                document.writeln("i = " + i + "<br/>");
+                i = i + 1;
+            }
+
+        }
+
+        function contar2() {
+            var y = 11;
+            do {
+                document.writeln("y = " + y + "<br>");
+                y++;
+            } while (i <= 10); // teste no final
+        }
+
+
+    </script>
+</body>
+
+</html>
